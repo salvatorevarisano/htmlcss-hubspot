@@ -264,9 +264,22 @@ section.main-top {
 }
 
 .row-crm .col-width-65 p {
+    margin-bottom: 28px;
+    padding-right: 200px;
+}
+.row-crm hr {
+    display: inline-block;
+    position: relative;
+    bottom: 4px;
+    width: 430px;
+    margin-left: 58px;
 }
 
-
+.row-crm li {
+    display: inline-block;
+    margin-top:36px ;
+    margin-right: 26px;
+}
 /* columns */
 .columns .col-width-30 {
     margin-bottom: 50px;
@@ -308,12 +321,19 @@ section.main-top {
     color: #fff;
 }
 
+.middle-main h2{
+    padding: 0 10px;
+}
+.middle-main p{
+    margin: 36px 0 54px 0;
+}
+
+/* grid  */
 .middle-main .col-width-25 {
     /* height: 168px; */
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
 }
-
 .middle-main .col-width-25:nth-child(4n + 4) {
     border-right: none;
 }
@@ -321,4 +341,37 @@ section.main-top {
     border-bottom: none;
 }
 
+.grid .col-width-25 div:first-child {
+    height: 40px;
+    margin: 20px 0;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.grid img {
+    vertical-align: middle;
+}
+
+.grid .col-width-25 div:nth-child(2) {
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.grid .col-width-25 div:last-child {
+    font-size: 11px;
+    margin: 24px 0;
+}
+
+/* bottom main  */
+.bottom-main .our-clients {
+    width: 600px;
+}
+
+.bottom-main .our-clients li {
+    line-height: 60px;
+}
+.bottom-main .our-clients li img {
+    width: 100%;
+    padding: 10px;
+    vertical-align: middle;
+}
 /* FOOTER CONTENT  */
