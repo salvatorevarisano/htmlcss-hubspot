@@ -33,13 +33,15 @@ nav a {
     text-decoration: none;
 }
 
+.cta-big + div {
+    font-size: 12px;
+}
 /* UTILITIES */
 /* layout */
 .wrap-container {
     width: 1200px;
     max-width: 1200px;
     margin: 0 auto;
-    /*background-color: red; placeholder*/
 }
 
 .col-width-25 {
@@ -210,9 +212,6 @@ header nav a {
     font-size: 52px;
     font-weight: 700;
 }
-.hero .col-width-50 div:last-child {
-    font-size: 12px;
-}
 
 /* main-top section  */
 section.main-top {
@@ -314,7 +313,6 @@ section.main-top {
     padding: 56px 0 100px 0;
     text-align: center;
     background-image: linear-gradient(to right, #3fa9ba, #44baa9);
-
 }
 
 .middle-main * {
@@ -330,7 +328,6 @@ section.main-top {
 
 /* grid  */
 .middle-main .col-width-25 {
-    /* height: 168px; */
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
 }
@@ -374,4 +371,77 @@ section.main-top {
     padding: 10px;
     vertical-align: middle;
 }
+
+/* customer counter */
+.customer-counter {
+    width: 200px;
+    margin-left: 75px;
+}
+.customer-counter div {
+    margin-bottom: 45px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+/* bottom */
+.bottom-main > div:nth-of-type(2) {
+    position: relative;
+    margin-top: 95px;
+    padding-bottom: 60px;
+}
+
+.bottom-main > div:nth-of-type(2) img {
+    position: absolute;
+    right: 0;
+    width: 320px;
+}
+
+.bottom-main > div:nth-of-type(2) p {
+    margin: 45px 0;
+}
+
+.bottom-main > div:nth-of-type(2) .cta {
+    margin-bottom: 46px;
+}
+
 /* FOOTER CONTENT  */
+footer {
+    padding-top: 40px;
+    background-color: #324a5b;
+}
+footer * {
+    color: #dadee0;
+}
+
+.top-footer {
+    padding-bottom: 22px;
+    border-bottom: 1px solid;
+}
+
+footer .col-width-25 li {
+    line-height: 2.5em;
+}
+
+footer .col-width-25 li:first-child a {
+    font-weight: bold;
+    color: #fff;
+}
+
+footer .cta {
+    color: #324a5b;
+    background-color: #dadee0;
+    border-color: #dadee0;
+}
+
+footer .col-width-25:nth-child(4) li:nth-child(8) > ul > li {
+    margin-right: 24px ;
+}
+
+/* .languages {
+    background: red;
+    border: 5px solid blue;
+    text-align: center;
+}
+.languages a {
+    color:blueviolet;
+} */
