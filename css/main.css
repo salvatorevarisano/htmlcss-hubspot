@@ -8,6 +8,23 @@
     color: #33485a;
 }
 
+body{
+    margin-top: 160px;
+}
+
+header {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top:0;
+}
+
+footer a:hover,
+header nav a:hover:not(.cta) {
+    color: #f3775b;
+}
+
 h2 {
     font-size: 32px;
     font-weight: 700;
@@ -28,14 +45,16 @@ strong {
 li {
     list-style: none;
 }
+
+.cta-big + div {
+    font-size: 12px;
+}
+
 /* general menu  */
 nav a {
     text-decoration: none;
 }
 
-.cta-big + div {
-    font-size: 12px;
-}
 /* UTILITIES */
 /* layout */
 .wrap-container {
@@ -94,7 +113,6 @@ nav a {
 }
 
 /* HEADER CONTENT  */
-
 header nav li {
     display: inline-block;
 }
@@ -125,13 +143,9 @@ header nav a {
     text-align: right;
 }
 
-.top-l-nav li , 
+.top-l-nav li:not(:first-of-type), 
 .top-r-nav  li {
     margin-left: 24px ;
-}
-
-.top-l-nav li:first-of-type {
-    margin-left: 0;
 }
 
 /* font icon search */
@@ -155,12 +169,12 @@ header nav a {
 /* main header  */
 .main-header {
     line-height: 80px;
+    background:#fff;
 }
 
 .main-nav {
     text-align: right;
 }
-
 .main-nav > ul > li {
     margin-left: 23px;
 }
@@ -266,6 +280,7 @@ section.main-top {
     margin-bottom: 28px;
     padding-right: 200px;
 }
+
 .row-crm hr {
     display: inline-block;
     position: relative;
@@ -276,9 +291,9 @@ section.main-top {
 
 .row-crm li {
     display: inline-block;
-    margin-top:36px ;
-    margin-right: 26px;
+    margin: 36px 26px 0 0;
 }
+
 /* columns */
 .columns .col-width-30 {
     margin-bottom: 50px;
@@ -286,7 +301,6 @@ section.main-top {
     padding: 20px 35px;
     text-align: center;
 }
-
 .columns .col-width-30:nth-child(3) {
     margin-right: 0;
 }
@@ -295,18 +309,16 @@ section.main-top {
     height: 98px;
     margin-bottom: 27px;
 }
-
 .columns > .col-width-30 p {
     padding-bottom: 72px;
     margin: 42px 0;
     border-bottom: 1px solid #899397 ;
 }
-
-
 .columns .col-width-30 ul {
     margin: 34px 0 50px 0;
     text-align: left;
 }
+
 /* section middle main  */
 .middle-main {
     margin-bottom: 58px ;
@@ -318,7 +330,6 @@ section.main-top {
 .middle-main * {
     color: #fff;
 }
-
 .middle-main h2{
     padding: 0 10px;
 }
@@ -342,7 +353,6 @@ section.main-top {
     height: 40px;
     margin: 20px 0;
     line-height: 40px;
-    vertical-align: middle;
 }
 .grid img {
     vertical-align: middle;
@@ -407,6 +417,7 @@ section.main-top {
 /* FOOTER CONTENT  */
 footer {
     padding-top: 40px;
+    padding-bottom: 44px;
     background-color: #324a5b;
 }
 footer * {
@@ -438,7 +449,6 @@ footer .col-width-25:nth-child(4) li:nth-child(8) > ul > li {
     text-align: center;
     border-bottom: 1px solid;
 }
-
 .middle-footer li,
 .bottom-footer li {
     display: inline-block;
