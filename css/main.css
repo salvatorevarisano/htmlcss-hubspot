@@ -413,11 +413,6 @@ footer * {
     color: #dadee0;
 }
 
-.top-footer {
-    padding-bottom: 22px;
-    border-bottom: 1px solid;
-}
-
 footer .col-width-25 li {
     line-height: 2.5em;
 }
@@ -437,11 +432,19 @@ footer .col-width-25:nth-child(4) li:nth-child(8) > ul > li {
     margin-right: 24px ;
 }
 
-/* .languages {
-    background: red;
-    border: 5px solid blue;
+.middle-footer {
+    margin-bottom: 41px;
+    padding-bottom: 22px;
     text-align: center;
+    border-bottom: 1px solid;
 }
-.languages a {
-    color:blueviolet;
-} */
+
+.middle-footer li,
+.bottom-footer li {
+    display: inline-block;
+    margin-right: 26px;
+}
+
+.bottom-footer .col-width-70 {
+    text-align: right;
+}
