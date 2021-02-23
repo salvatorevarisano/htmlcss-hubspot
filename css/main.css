@@ -13,15 +13,17 @@ body{
 }
 
 header {
-    z-index: 5;
+    z-index: 4;
     position: fixed;
     width: 100%;
     left: 0;
     top:0;
 }
 
+.cta.login,
+header nav a:hover:not(.cta),
 footer a:hover,
-header nav a:hover:not(.cta) {
+footer .social a:hover i {
     color: #f3775b;
 }
 
@@ -55,6 +57,23 @@ nav a {
     text-decoration: none;
 }
 
+/* menu dropdown  */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    padding: 15px;
+}
+.dropdown-content li {
+    line-height: 2em;
+}
 /* UTILITIES */
 /* layout */
 .wrap-container {
@@ -113,7 +132,7 @@ nav a {
 }
 
 /* HEADER CONTENT  */
-header nav li {
+header nav > ul > li {
     display: inline-block;
 }
 header nav a {
@@ -128,7 +147,7 @@ header nav a {
 }
 
 /* font icon planet */
-.top-l-nav li:first-of-type > a::before {
+.top-l-nav > ul > li:first-of-type > a::before {
     padding-right: 5px;
     font-family: "Font Awesome 5 Free";
     font-style: normal;
@@ -143,8 +162,8 @@ header nav a {
     text-align: right;
 }
 
-.top-l-nav li:not(:first-of-type), 
-.top-r-nav  li {
+.top-l-nav > ul > li:not(:first-of-type), 
+.top-r-nav > ul > li {
     margin-left: 24px ;
 }
 
@@ -162,7 +181,6 @@ header nav a {
 }
 
 .cta.login {
-    color: #f3775b;
     background-color: transparent;
 }
 
@@ -180,7 +198,7 @@ header nav a {
 }
 
 /* font icon drop menu top & main nav */
-.top-l-nav ul > li:first-of-type > a::after,
+.top-l-nav > ul > li:first-of-type > a::after,
 .main-nav > ul > li > a::after {
     padding-left: 16px;
     font-family: "Font Awesome 5 Free";
@@ -192,6 +210,37 @@ header nav a {
 .main-header img {
     width: 106px;
     vertical-align: middle;
+}
+
+/* widget chat  */
+.chat {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 5;
+    text-align: center;
+    line-height: 50px;
+    background-color: #33485a;
+    border-radius: 50%;
+}
+.chat i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.message {
+    display: none;
+    width: 150px;
+    padding: 15px;
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+    line-height: 1;
+}
+.chat:hover .message {
+    display: block;
 }
 
 /* MAIN CONTENT  */
@@ -247,7 +296,7 @@ section.main-top {
 }
 
 /* font icon check  */
-.shadow li::before {
+main .shadow li::before {
     padding-right: 15px;
     font-family: "Font Awesome 5 Free";
     font-style: normal;
@@ -424,14 +473,14 @@ footer * {
     color: #dadee0;
 }
 
+footer .col-width-25 h4,
 footer .col-width-25 li {
     line-height: 2.5em;
 }
-
-footer .col-width-25 li:first-child a {
+footer .col-width-25 h4 {
     font-weight: bold;
     color: #fff;
-}
+ }
 
 footer .cta {
     color: #324a5b;
@@ -439,7 +488,7 @@ footer .cta {
     border-color: #dadee0;
 }
 
-footer .col-width-25:nth-child(4) li:nth-child(8) > ul > li {
+footer .col-width-25:nth-child(4) li:last-child > ul > li {
     margin-right: 24px ;
 }
 
