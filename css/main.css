@@ -74,6 +74,20 @@ nav a {
 .dropdown-content li {
     line-height: 2em;
 }
+
+.main-nav li.dropdown:nth-of-type(3) .dropdown-content {
+    width: 800px;
+    height: 420px;
+    right: 20px;
+    text-align: left;
+}
+.main-nav li.dropdown:nth-of-type(3) .dropdown-content i {
+    margin-right: 5px;
+    font-size: 1.5em;
+}
+.main-nav li.dropdown:nth-of-type(3) .dropdown-content ul {
+    padding-left: 40px;
+}
 /* UTILITIES */
 /* layout */
 .wrap-container {
